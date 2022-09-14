@@ -5,6 +5,7 @@ const Home = () => {
 
     return (
         <>
+        
             <main>
                 <section className={style.sectionHome}>
                     <article className="style1 left">
