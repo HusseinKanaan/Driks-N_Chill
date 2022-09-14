@@ -4,9 +4,8 @@ import vector from '../../img/Vector.png'
 import { useState } from 'react'
 import { useParams } from "react-router-dom"
 
-
 const Header = (props) => {
-    
+
     const [cocktail, setCocktail] = useState('')
     console.log(cocktail)
     return (
