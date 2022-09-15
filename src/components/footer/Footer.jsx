@@ -19,7 +19,7 @@ const Footer = () => {
 
 
             </div>
-             <ul>
+             {/* <ul>
                 <li>
                     <a href="#">
                         <i className="fab fa-facebook-f icon"></i>    </a>
@@ -32,7 +32,7 @@ const Footer = () => {
                 <li>
                     <a href="#"><i className="fab fa-google-plus-g icon"></i></a></li>
             </ul>
-
+ */}
 
 
         </>
