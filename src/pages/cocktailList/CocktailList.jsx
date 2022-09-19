@@ -5,9 +5,9 @@ import Header from '../../components/header/Header'
 import Footer from '../../components/footer/Footer'
 import { useParams } from "react-router-dom"
 
-const Cocktails = (props) => {
+const CocktailList = () => {
 
-    const [cocktails, setCocktails] = useState(null)
+    const [cocktails, setCocktails] = useState([])
     const params = useParams()
 
     let url = ''
@@ -32,14 +32,13 @@ const Cocktails = (props) => {
         case 'rum':
             url = 'https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=Rum'
             break
+        
         default:
             url = `https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${params.drink}`
     }
 
 
     useEffect(() => {
-
-
 
         fetch(url)
             .then(res => res.json())
@@ -57,8 +56,8 @@ const Cocktails = (props) => {
 
             <div className={style.divCocktailList}>
 
-                {cocktails &&
-
+                {/* cocktails &&
+ */
                     cocktails.map((item, e) => {
 
                         return (
@@ -83,4 +82,4 @@ const Cocktails = (props) => {
     )
 }
 
-export default Cocktails
+export default CocktailList
